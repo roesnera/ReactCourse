@@ -1,3 +1,4 @@
+import "./searchBar.css";
 import { useState } from "react";
 
 function SearchBar({ onSubmit }) {
@@ -13,8 +14,9 @@ function SearchBar({ onSubmit }) {
         updateSearchTerm(val);
     }
 
-    return <div>
+    return <div className="search-bar">
             <form onSubmit={handleFormSubmit}>
+                <label>Enter search term</label>
                 <input value={searchTerm} onChange={handleChange}/>
                 {searchTerm.length < 3 ? 'Term must be longer': null}
             </form>

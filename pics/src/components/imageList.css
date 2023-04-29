@@ -1,6 +1,8 @@
 .imageList {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
+    columns: 6 200px;
+    column-gap: 10px;
 }

@@ -1,8 +1,8 @@
 import "./imageShow.css";
 
-function ImageShow({ url }) {
+function ImageShow({ url, alt }) {
     console.log(url);
-    return <img src={url} alt="search result" className="image"/>
+    return <img src={url} alt={alt} className="image"/>
 }
 
 export default ImageShow;
