@@ -1,11 +1,10 @@
-import { useContext, useEffect, useState } from "react";
-import PropTypes from "prop-types";
-import BooksContext from "../context/books";
+import { useState } from "react";
+import useBooksContext from '../hooks/useBooksContext';
 
 
 function BookCreate() {
     const [inputValue, updateValue] = useState("");
-    const { createBook } = useContext(BooksContext);
+    const { createBook } = useBooksContext();
 
     const handleChange = (event) => {
         updateValue(event.target.value);

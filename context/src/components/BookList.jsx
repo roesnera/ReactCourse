@@ -2,14 +2,11 @@
 // import PropTypes from "prop-types";
 import BookShow from "./BookShow";
 import "./BookList.css";
-import BooksContext from "../context/books";
-import { useContext } from 'react';
-
-
+import useBooksContext from "../hooks/useBooksContext";
 
 function BookList({ handleEdit, handleDelete }) {
 
-    const { books } = useContext(BooksContext);
+    const { books } = useBooksContext();
 
     const renderedBooks = books.map(({ title, id }) => <BookShow title={title} key={id} id={id} handleDelete={handleDelete} handleEdit={handleEdit} />)
     
