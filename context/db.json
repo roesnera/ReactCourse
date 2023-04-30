@@ -1,0 +1,28 @@
+{
+  "books": [
+    {
+      "title": "mary's daughter",
+      "id": 4
+    },
+    {
+      "title": "fairy slaughter",
+      "id": 5
+    },
+    {
+      "title": "barry's hotter",
+      "id": 6
+    },
+    {
+      "title": "daring scoffer",
+      "id": 7
+    },
+    {
+      "title": "sharing cropper",
+      "id": 8
+    },
+    {
+      "title": "Scary Copper",
+      "id": 9
+    }
+  ]
+}
