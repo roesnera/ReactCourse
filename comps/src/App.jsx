@@ -5,19 +5,19 @@ function App() {
 
   return (
     <div>
-      <div className="">
-        <Button primary secondary>Click here</Button>
+      <div>
+        <Button primary>Click here</Button>
       </div>
-      <div className="">
+      <div>
         <Button>Click here</Button>
       </div>
-      <div className="">
+      <div>
         <Button>Click here</Button>
       </div>
-      <div className="">
+      <div>
         <Button>Click here</Button>
       </div>
-      <div className="">
+      <div>
         <Button>Click here</Button>
       </div>
     </div>

@@ -11,7 +11,32 @@ export default function Button({
   outline,
   rounded
 }) {
-  return <button>{children}</button>
+
+  const styles = [];
+  let color = "";
+
+  if(primary){
+    color = "-stone-300";
+    styles.push("bg"+color);
+  } else if(secondary){
+    color = "-stone-900";
+    styles.push("bg"+color);
+  } else if(success){
+    color = "-green-500";
+    styles.push("bg"+color);
+  } else if(warning){
+    color = "-yellow-300";
+    styles.push("bg"+color);
+  } else if(danger){
+    color = "-red-600";
+    styles.push("bg"+color);
+  }
+
+
+
+  const finalStyle = styles.join(" ");
+
+  return <button className={finalStyle}>{children}</button>
 }
 
 Button.propTypes = {
