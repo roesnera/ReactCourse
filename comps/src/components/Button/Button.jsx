@@ -10,10 +10,14 @@ export default function Button({
   warning,
   danger,
   outline,
-  rounded
+  rounded,
+  ...rest
 }) {
 
-  const finalStyle = classNames('flex items-center px-3 py-1.5 border',{
+  const finalStyle = classNames(
+    rest.className,
+    'flex items-center px-3 py-1.5 mt-1 mb-1 border',
+    {
     'border-blue-500 bg-blue-500 text-black': primary,
     'border-gray-900 bg-gray-900 text-white': secondary,
     'border-green-500 bg-green-500 text-black': success,
@@ -28,7 +32,7 @@ export default function Button({
     'text-red-500': outline && danger,
   });
 
-  return <button className={finalStyle}>{children}</button>
+  return <button className={finalStyle} {...rest}>{children}</button>
 }
 
 Button.propTypes = {
