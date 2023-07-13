@@ -13,10 +13,10 @@ function App() {
         <Button secondary>Click here</Button>
       </div>
       <div>
-        <Button success>Click here</Button>
+        <Button success outline>Click here</Button>
       </div>
       <div>
-        <Button warning>Click here</Button>
+        <Button warning rounded>Click here</Button>
       </div>
       <div>
         <Button danger>Click here</Button>

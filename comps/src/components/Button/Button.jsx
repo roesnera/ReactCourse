@@ -13,37 +13,19 @@ export default function Button({
   rounded
 }) {
 
-  // const styles = [];
-  // let color = "";
-
-  // if(primary){
-  //   color = "-stone-300";
-  //   styles.push("bg"+color);
-  // } else if(secondary){
-  //   color = "-stone-900";
-  //   styles.push("bg"+color);
-  // } else if(success){
-  //   color = "-green-500";
-  //   styles.push("bg"+color);
-  // } else if(warning){
-  //   color = "-yellow-300";
-  //   styles.push("bg"+color);
-  // } else if(danger){
-  //   color = "-red-600";
-  //   styles.push("bg"+color);
-  // }
-
-
-
-  // const finalStyle = styles.join(" ");
-  // console.log(finalStyle);
-
-  const finalStyle = classNames({
-    'bg-stone-300': primary,
-    'bg-stone-900': secondary,
-    'bg-green-500': success,
-    'bg-yellow-300': warning,
-    'bg-red-600':danger
+  const finalStyle = classNames('px-3 py-1.5 border',{
+    'border-blue-500 bg-blue-500 text-black': primary,
+    'border-gray-900 bg-gray-900 text-white': secondary,
+    'border-green-500 bg-green-500 text-black': success,
+    'border-yellow-400 bg-yellow-400 text-black': warning,
+    'border-red-500 bg-red-500 text-black':danger,
+    'bg-white': outline,
+    'rounded-full': rounded,
+    'text-blue-500': outline && primary,
+    'text-gray-500': outline && secondary,
+    'text-green-500': outline && success,
+    'text-yellow-500': outline && warning,
+    'text-red-500': outline && danger,
   });
 
   return <button className={finalStyle}>{children}</button>
