@@ -1,4 +1,5 @@
-import './App.css';
+// import './App.css';
+import './index.css';
 import Button from './components/Button';
 
 function App() {
@@ -9,16 +10,16 @@ function App() {
         <Button primary>Click here</Button>
       </div>
       <div>
-        <Button>Click here</Button>
+        <Button secondary>Click here</Button>
       </div>
       <div>
-        <Button>Click here</Button>
+        <Button success>Click here</Button>
       </div>
       <div>
-        <Button>Click here</Button>
+        <Button warning>Click here</Button>
       </div>
       <div>
-        <Button>Click here</Button>
+        <Button danger>Click here</Button>
       </div>
     </div>
   )
